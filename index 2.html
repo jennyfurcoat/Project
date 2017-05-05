@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Jennifer Nguyen</title>
+<meta charset="urf-8">
+<link rel="stylesheet" href="site.css">
+<style>
+body { color: #0000FF; }
+h3 { border: 3px dashed #000033; }
+h1 { color: #ffffff; color: rgba(255, 255, 255, 0.7); font-family: Verdana, Helvetica, sans-serif; font-size: 5em; padding-right: 10px; text-align: right; }
+h2 { border-bottom: 2px dashed #191970; }
+footer { border-top: thin solid #aeaed4;
+padding-top: 10px;
+color: #333333; }
+figure { width: 640px; border: 1px solid #000000; padding: 5px; }
+figcaption { text-align: center; font-family: Red Panda }
+#content { background-image: url(wallpaper.jpg); background-repeat: no-repeat; margin-left: auto; margin-right: auto; width: 640px; height: 480px; padding-top: 20px; }
+float { float: leftt; margin-right: 10px; border: 3px ridge #000000; }
+.clearleft { clear: left; } 
+div { background-color: #F3F1BF; overflow: auto; width: 100%; }
+table { margin: auto;
+        border: 5px solid #000066;
+        width: 600px; 
+		border-spacing: 0;
+}
+td, th { padding: 0.5em;
+		 border-style: none;
+         font-family: Arial, sans-serif; 
+}
+caption { font-family: Verdana, sans-serif;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding-bottom: 0.5em; 
+}
+tr:nth-of-type(even) { background-color: #eaeaea; }
+tr:first-of-type { background-color: #006; color: #eaeaea; }
+table { width: 200px;
+        margin: auto;
+}
+caption { font-size: 2em;
+          font-weight: bold;
+}
+thead { background-color: #eaeaea;
+}
+tbody { font-family: Arial, sans-serif;
+        font-size: .90em;
+}
+tbody td { border-bottom: 1px #000033 dashed;
+           padding-left: 25px;
+}
+tfoot { background-color: #eaeaea;
+        font-weight: bold;
+        text-align: center;
+
+</style>
+</head>
+<body>
+<header>
+<script>
+function promptQuantity()  {
+  var quantity;
+  quantity = prompt("Please type a quantity greater than 0");
+  if (quantity <= 0)    {
+     alert("Quantity is not greater than 0.");
+  } else {
+     alert("Thank you for entering a quantity greater than 0.");
+  } // end if
+} // end function promptQuantity
+</script>
+<h1><img src="background.jpg" alt="Background" width="700" height="86"></h1>
+</header>
+<nav>
+<ul><b><a href="index.html">Home</a> &nbsp; Quotes &nbsp; <a href="index 3.html">Music</a> &nbsp; <a href="index 4.html">Gaming</a> &nbsp; <a href="index 5.html">Websites</a> &nbsp; <a href="index 6.html">School</a></b></ul>
+</nav>
+<p> Some of my favorite quotes <br> Enjoy!
+<br><a href="http://youtube.com">My Youtube Channel</a>
+<br><li>E-mail:<a href="mailto:nguyenjt24@vcu.edu">nguyenjt24@vcu.edu</a>
+</li><br>
+</p>
+<h2>Funny</h2>
+<p style="color: #FF0000"> "Tact is the ability to tell someone to go to hell in such a way that they look forward to their trip"</p>
+<blockquote>
+<strong>Winston Church</strong>
+</blockquote>
+<br> “When a woman says, ‘I have nothing to wear!’, what she really means is, ‘There’s nothing here for who I’m supposed to be today."
+<br>
+</p>
+<h3>Feminism and Social Justice</h3>
+<ul>
+<li>"Men like to put women on a pedestal and then complain they're out of reach"</li>
+<li>"The privileged choose to fight, the unprivileged are forced too fight"</li>
+</ul>
+<h4>Insightful</h4>
+<ol>
+<li>"Take the stairs. Enjoy it while you can. You're going to miss them when you're not physically able to take them anymore"</li>
+<li>"If I could show you a picture of what it will look like when you get there, you'd have no concerns about trying. But I can't, so you'll just have to trust me; it's going to be worth it."</li>
+<li>"Spiteful words can hurt her feelings, but silence will break her heart"</li>
+</ol>
+<div id="content">
+<h1>Wallpaper</h1>
+</div>
+<h4>Notes</h4>
+<figure>
+<img src="redpanda.jpg" alt="redpanda" height ="480" width="640">
+<figcaption>
+Red Panda
+</figcaption>
+</figure>
+<table border="1">
+<tr>
+<td colspan="2">This spans two columns</td>
+</tr>
+<tr>
+<td>Column 1</td>
+<td>Column 2</td>
+</tr>
+</table>
+<dl>
+<select size="1" name="favbrowser" id="favbrowser">
+<option>Select your favorite browser</option>
+<option value="Interent Explorer">Internet Explorer</option>
+<option value="Firefox">Firefox</option>
+<option value="Chrome">Chrome</option>
+</select>
+<div> 
+<img class="float" src="icon.png" alt="float picture" height="100" width="100">
+<p>This is my icon.</p>
+<br class="clearleft">
+</div>
+<h5>Using JavaScript</h5>
+<input type="button" value="Click to enter quantity" onclick="promptQuantity();">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		alert("Ready for School");
+ });
+</script>
+<dt>Disclaimer</dt>
+<hr><dd>Have fun reading!</dd><hr>
+<footer>
+<small><i>Copyright &copy; 2017 Jennifer Nguyenn. All rights reserved</i></small>
+</footer>
+</body>
+</html>

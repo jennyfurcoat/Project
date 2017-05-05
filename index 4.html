@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Jennifer Nguyen</title>
+<meta charset="urf-8">
+<link rel="stylesheet" href="site.css">
+<style>
+body { color: #0000FF; }
+h3 { border: 3px dashed #000033; }
+h1 { padding: 86px; }
+h2 { border-bottom: 2px dashed #191970; }
+footer { border-top: thin solid #aeaed4;
+padding-top: 10px;
+color: #333333; }
+figure { width: 640px; border: 1px solid #000000; padding: 5px; }
+figcaption { text-align: center; font-family: Red Panda }
+float { float: leftt; margin-right: 10px; border: 3px ridge #000000; }
+.clearleft { clear: left; } 
+div { background-color: #F3F1BF; overflow: auto; width: 100%; }
+table { margin: auto;
+        border: 5px solid #000066;
+        width: 600px; 
+		border-spacing: 0;
+}
+td, th { padding: 0.5em;
+		 border-style: none;
+         font-family: Arial, sans-serif; 
+}
+caption { font-family: Verdana, sans-serif;
+          font-weight: bold;
+          font-size: 1.2em;
+          padding-bottom: 0.5em; 
+}
+tr:nth-of-type(even) { background-color: #eaeaea; }
+tr:first-of-type { background-color: #006; color: #eaeaea; }
+table { width: 200px;
+        margin: auto;
+}
+caption { font-size: 2em;
+          font-weight: bold;
+}
+thead { background-color: #eaeaea;
+}
+tbody { font-family: Arial, sans-serif;
+        font-size: .90em;
+}
+tbody td { border-bottom: 1px #000033 dashed;
+           padding-left: 25px;
+}
+tfoot { background-color: #eaeaea;
+        font-weight: bold;
+        text-align: center;
+}
+form { background-color:#eaeaea;
+	font-family: Arial, sans-serif;
+    padding: 10px; }
+label { float: left;
+	width: 100px; 
+    clear: left;
+	text-align: right; 
+	padding-right: 10px;
+	margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+                  display: block; } 
+#mySubmit { margin-left: 110px; }
+</style>
+</head>
+<body>
+<header>
+<h1><img src="background.jpg" alt="Background" width="700" height="86"></h1>
+</header>
+<nav>
+<ul><b><a href="index.html">Home</a> &nbsp; <a href="index 2.html">Quotes</a> &nbsp; <a href="index 3.html">Music</a> &nbsp; Gaming &nbsp; <a href="index 5.html">Websites</a> &nbsp; <a href="index 6.html">School</a></b></ul>
+</nav>
+<p> <strong>Some of my favorite games!<strong> <br> Enjoy!
+<br><a href="#" onmouseover="alert('You moused over');">http://youtube.com">My Youtube Channel</a>
+<br><li>E-mail:
+<a href="mailto:nguyenjt24@vcu.edu">nguyenjt24@vcu.edu</a>
+</li><br>
+</p>
+<h2>History</h2>
+<p style="color: #FF0000"> I was best friends with my cousin who moved into my family's house when I was in middle school. He was very into video games and would beg me to play with him when he had nobody else. I played whatever he played and ended up playing too much video games then and now. I now constantly play video games with him and his group of friends. 
+</p>
+<blockquote>
+<strong>I reccommend these games!</strong>
+</blockquote>
+<h3>What I Constantly Play</h3>
+<ul>
+<li>League of Legends</li>
+<li>Overwatch</li>
+</ul>
+<h4>Games I Used to Play</h4>
+<ol>
+<li>Team Fortress 2</li>
+<li>Terraria</li>
+<li>Pokemon</li>
+</ol>
+<div> 
+<img class="float" src="icon.png" alt="float picture" height="100" width="100">
+<p>This is my icon.</p>
+<br class="clearleft">
+</div>
+<h4>Notes</h4>
+<figure>
+<img src="redpanda.jpg" alt="redpanda" height ="480" width="640">
+<figcaption>
+Red Panda
+</figcaption>
+</figure>
+<table border="1">
+<tr>
+<th>School Attended</th>
+<th>Years</th>
+<th>Degree Awarded<th>
+</tr>
+<tr>
+<td>Edison High School</td>
+<td>2010-2014</td>
+<td>Advanced High School Diploma</td>
+</tr>
+<tr>
+<td>VCU</td>
+<td>2014-2018</td>
+<td>Soon To Be Double Major</td>
+</tr>
+</table>
+<script>
+function validateForm() {
+if (document.forms[0].myName.value == "" ) {
+    alert("Name field cannot be empty.");
+    return false;
+} // end if
+if (document.forms[0].myEmail.value < 18) {
+    alert("Email is not Valid.");
+    return false;
+} // end if
+alert("Name and Email are valid.");
+return true;
+} // end function validateForm
+</script>
+<h5>Contact Us</h5>
+<form method="post"
+      action="http://webdevfoundations.net/scripts/formdemo.asp"
+      onsubmit="return validateForm();">
+  <label for="myName">Name:</label>
+  <input type="text" name="myName" id="myName">
+  <label for="myEmail">E-mail:</label>
+  <input type="text" name="myEmail" id="myEmail">
+  <label for="myComments">Comments:</label>
+  <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+  <input id="mySubmit" type="submit" value="Submit">
+</form>
+<dl>
+<script>
+  var userName;
+  userName = prompt("Please enter your name");
+  document.write("<h2>Hello " + userName + "</h2>");
+</script>
+<script>
+  document.write("<p>Using document.write to add text</p>");
+  document.write("<h2>Notice that we can add HTML tags too!!!</h2>");
+</script>
+<h6>This document was last modified on: 
+<script>
+document.write(document.lastModified);
+</script>
+</h6>
+<dt>Disclaimer</dt>
+<hr><dd>Have fun reading!</dd><hr>
+<footer>
+<small><i>Copyright &copy; 2017 Jennifer Nguyenn. All rights reserved</i></small>
+</footer>
+</body>
+</html>
